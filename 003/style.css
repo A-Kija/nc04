@@ -1,0 +1,31 @@
+div {
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.c1 {
+    background-color: #B74F6F;
+}
+
+.c2 {
+    background-color: #ADBDFF;
+}
+
+.c3 {
+    background-color: #3185FC;
+}
+
+.c4 {
+    background-color: #34E5FF;
+}
+
+.c5 {
+    background-color: #35281D;
+}
