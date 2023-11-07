@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.c {
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 130px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: monospace;
+    border: 2px solid white;
+    transition: all .5s cubic-bezier(1,-1.11,0,1.6);
+}
+
+.c:hover {
+    transform: scale(1.7);
+    cursor: pointer;
+}
+
+div div {
+    transition: all .5s cubic-bezier(1,-1.11,0,1.6);
+    transform: rotate(90deg);
+}
+
+div:hover div {
+    transform: rotate(0deg);
+}
+
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+
+.c1 {
+    background-color: #B74F6F;
+    border-color: #B74F6F;
+    
+}
+
+.c1:hover {
+    background-color: #B74F6F80;
+    border-color: white;
+    
+}
+
+.c2 {
+    background-color: #ADBDFF;
+    border-color: #ADBDFF;
+}
+
+.c2:hover {
+    background-color: #ADBDFF80;
+    border-color: white;
+}
+
+.c3 {
+    background-color: #3185FC;
+    border-color: #3185FC;
+}
+
+.c3:hover {
+    background-color: #3185FC80;
+    border-color: white;
+}
+
+.c4 {
+    background-color: #34E5FF;
+    border-color: #34E5FF;
+}
+
+.c4:hover {
+    background-color: #34E5FF80;
+    border-color: white;
+}
+
+.c5 {
+    background-color: #35281D;
+    border-color: #35281D;
+}
+
+.c5:hover {
+    background-color: #35281D80;
+    border-color: white;
+}
