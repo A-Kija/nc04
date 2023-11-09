@@ -1,6 +1,7 @@
 body {
     background-color: black;
     margin: 0;
+    position: relative;
 }
 
 .top {
@@ -94,10 +95,19 @@ body {
 }
 
 label {
-    display: inline-block;
+    display: none;
     position: absolute;
     top: 30px;
     right: 30px;
+    cursor: pointer;
+    width: 76px;
+    height: 30px
+}
+
+@media only screen and (max-width: 740px) {
+    label {
+        display: inline-block;
+    }
 }
 
 .mobile-menu {
@@ -106,7 +116,22 @@ label {
     background-color: chocolate;
     position: absolute;
     top: 0;
+    left: -300px;
+    transition: left 0.3s ease-in-out;
+}
+
+input {
+    display: none;
+}
+
+input:checked + .mobile-menu {
     left: 0;
+}
+
+@media only screen and (min-width: 740px) {
+    .mobile-menu {
+        left: -300px!important;
+    }
 }
 
 .mobile-menu ul {
@@ -138,4 +163,23 @@ label {
 
 .mobile-menu ul li ul li a {
     font-size: 15px;
+}
+
+label.close {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 30px;
+    z-index: 100;
+}
+
+label.close::after {
+    content: '\2671';
+    font-size: 30px;
+    color: white;
+    display: block;
+    
 }
