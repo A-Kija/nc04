@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.top {
+    position: relative;
+}
+
+
+/* a {
+    color: crimson!important;
+} */
+
+.desktop-menu {
+    height: 100px;
+    border-bottom: 3px solid darkslateblue;
+}
+
+@media only screen and (max-width: 740px) {
+    .desktop-menu {
+        display: none;
+    }
+}
+
+.desktop-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu ul li {
+    padding: 0 15px 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.desktop-menu ul li.sub {
+    position: relative;
+    top: 20px;
+}
+
+.desktop-menu ul li a {
+    color: darkslateblue;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.desktop-menu ul li a:hover {
+    color: darkorange;
+}
+
+.desktop-menu ul li ul li {
+    padding: 0 5px 0 5px;
+}
+
+.desktop-menu ul li ul li a {
+    font-size: 15px;
+}
+
+.burger {
+    margin: 0 3px;
+    height: 6px;
+    width: 70px;
+    background-color: darkslateblue;
+    border-radius: 3px;
+    position: relative;
+}
+
+.burger::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 6px;
+    width: 70px;
+    background-color: darkslateblue;
+    border-radius: 3px;
+}
+
+.burger::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    height: 6px;
+    width: 70px;
+    background-color: darkslateblue;
+    border-radius: 3px;
+}
+
+label {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.mobile-menu {
+    width: 300px;
+    height: 100vh;
+    background-color: chocolate;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu ul li a:hover {
+    color: darkorchid;
+}
+
+.mobile-menu ul li ul li {
+    padding: 0 5px 0 5px;
+}
+
+.mobile-menu ul li ul li a {
+    font-size: 15px;
+}
