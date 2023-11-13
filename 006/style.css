@@ -1,0 +1,22 @@
+body {
+    background-image: url("http://127.0.0.1:5500/006/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #E01FB6
+}
+
+a {
+    color: #5996B2; 
+}
+
+.bin {
+    width: 45%;
+    display: inline-block;
+}
+
+.bin1 {
+    height: 100vh;
+    overflow-y: scroll;
+}

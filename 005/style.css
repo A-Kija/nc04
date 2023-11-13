@@ -38,7 +38,21 @@ body {
 
 .desktop-menu ul li.sub {
     position: relative;
-    top: 20px;
+}
+
+.desktop-menu ul li.sub:hover {
+    padding-bottom: 20px;
+}
+
+.desktop-menu ul li.sub ul {
+    display: none;
+}
+
+.desktop-menu ul li.sub:hover ul {
+    display: block;
+    position: absolute;
+    width: 300px;
+    margin: 5px 0 0 0;
 }
 
 .desktop-menu ul li a {
